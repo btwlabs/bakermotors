@@ -16,7 +16,8 @@
 	}
 	a.back-to-top {
 		position: absolute;
-		@include center($xy:x);
+		left: 50%;
+		transform: translateXY(-50%, -50%);
 		top: -30px;
 		display: block;
 		width: 72px;

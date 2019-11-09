@@ -10,6 +10,12 @@
 	}
 }
 
+.off-canvas {
+	.close-button {
+		-webkit-appearance: none; // overrides default browser button styling which is gray
+	}
+}
+
 .right-off-canvas-toggle {
 	width: 40px;
 	height: 40px;
@@ -48,8 +54,9 @@
 	
 	.contact-call {
 		position: absolute;
-		@include center($xy:x);
+		left: 50%;
 		top: 0px;
+		transform: translateX(-50%);
 		font-size: 18px;
 		font-weight: 300;
 		

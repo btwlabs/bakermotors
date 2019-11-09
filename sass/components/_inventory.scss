@@ -1,0 +1,55 @@
+//------------------------------------------------
+//
+// 	Section SERVICES
+//
+//------------------------------------------------*/
+
+
+
+
+.section-inventory {
+	
+	.flex-grid {
+		@include flexbox;
+		@include flex-wrap($value: wrap);
+		margin-top: 60px;
+	}
+	.flex-grid-item {
+	    margin-bottom: 70px;
+	    line-height: 1.6;
+	    text-align: center;
+	    
+	    @media #{$small-and-down} {
+			@include flex($fg: 0, $fs: 0, $fb: 100%);
+		}
+	    @media #{$medium-only} {
+			@include flex($fg: 0, $fs: 0, $fb: 46%);
+				margin: 0 2% 70px;
+		}
+	    @media #{$large-and-up} {
+			@include flex($fg: 0, $fs: 0, $fb: 33.333%);
+			padding: 0 15px;
+		}
+		
+		h3 {
+			@include font-size(26px);
+		}
+		
+		.icon {
+			max-width: 220px;
+			margin: 0 auto 10px;
+			display: block;
+		}
+		
+		.btn {
+			display: inline-block;
+		}
+		
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+
+}
