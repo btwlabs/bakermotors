@@ -20,17 +20,17 @@ $(document).ready(function(){
 $('.carousel.carousel-slider').carousel({fullWidth: true});
 
 /* -- swiper js --*/
-$(document).ready(function () {
+//$(document).ready(function () {
 	//initialize swiper when document ready  
-	var mySwiper = new Swiper ('.swiper-container', {
+	//var mySwiper = new Swiper ('.swiper-container', {
 		// Optional parameters
-		pagination: '.swiper-pagination',
-		paginationClickable: true,
-		paginationBulletRender: function (swiper, index, className) {
-			return '<span class="' + className + '">' + (index + 1) + '</span>';
-		}
-	})        
-});
+	//	pagination: '.swiper-pagination',
+	//	paginationClickable: true,
+	//	paginationBulletRender: function (swiper, index, className) {
+	//		return '<span class="' + className + '">' + (index + 1) + '</span>';
+	//	}
+//	})        
+//});
  
 
 
@@ -43,7 +43,7 @@ function initMap(elem) {
 
 	//Map start init
     var mapOptions = {
-        center: new google.maps.LatLng(36.157091,-86.796667),
+        center: new google.maps.LatLng(36.384349,-86.455373),
         zoom: 15,
         zoomControl: true,
         zoomControlOptions: {
@@ -62,11 +62,11 @@ function initMap(elem) {
         mapTypeId: google.maps.MapTypeId.ROADMAP,
 		styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
 		}
-    var contentString = '<div><strong>Dragonfly Screen Graphics</strong></div>'+
-        '<div class="street-address">1630 State St.</div>'+
-        '<div><span class="city">Nashville, </span>'+
+    var contentString = '<div><strong>Baker Motors</strong></div>'+
+        '<div class="street-address">441 Nashville Pike</div>'+
+        '<div><span class="city">Gallatin, </span>'+
         '<span class="state">TN </span>'+
-        '<span class="zipcode">37203</span></div>';
+        '<span class="zipcode">37066</span></div>';
                        
     var map = new google.maps.Map(document.getElementById('map'),mapOptions);
     var infowindow = new google.maps.InfoWindow({
@@ -75,7 +75,7 @@ function initMap(elem) {
     var marker = new google.maps.Marker({
     	icon: 'images/map-pin.png',
         map: map,
-        title: 'Dragonfly Screen Graphics, Inc.',
+        title: 'Baker Motors',
         position: map.getCenter() 
         });
     marker.addListener('click', function() {
