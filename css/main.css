@@ -6892,9 +6892,9 @@ button#cf-submit {
 .section-footer a.back-to-top {
   position: absolute;
   left: 50%;
-  -webkit-transform: translateXY(-50%, -50%);
-      -ms-transform: translateXY(-50%, -50%);
-          transform: translateXY(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: -30px;
   display: block;
   width: 72px;
@@ -6986,6 +6986,12 @@ button#cf-submit {
   display: block;
 }
 
+@media only screen and (max-width: 600px) {
+  .section-footer .copyright {
+    text-align: center;
+    margin: 10px 0 30px;
+  }
+}
 /*---------------------------------------------------------
 -----------------------------------------------------------
 
